@@ -1,0 +1,11 @@
+/** Gerais **/
+* {margin: 0px auto; padding: 0px; border: none;}
+html {height: 100%; scroll-behavior: smooth;}
+body {height: 100%; font-family:'Segoe UI Light', sans-serif;}
+
+
+/** Container **/
+.container {width: 1000px; display: flex;}
+@media (max-width: 900px) {.container {width: 700px;}}
+@media (max-width: 700px) {.container {width: 95%;}}
+@media (max-width: 500px) {.container {width: 95%;}}

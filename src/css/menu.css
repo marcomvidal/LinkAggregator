@@ -1,0 +1,49 @@
+/** Main Menu **/
+.main-menu__container {height: 100%; display: flex;}
+
+.main-menu {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+}
+
+
+/** Main Menu Item **/
+.main-menu > li {
+    display: block;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: left;
+    align-self: center;
+}
+
+.main-menu > li:not(:last-child) {border-right: 1px solid;}
+
+
+/** Side Menu **/
+.side-menu__container {
+    width: 57%;
+    display: block;
+    margin-top: 60px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(64, 53, 132);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 1000px) {.side-menu__container {display: none;}}
+.side-menu__container--off {display: none;}
+
+@media (max-width: 500px) {
+    .side-menu__container, .side-menu__container--off {width: 100%;}
+}
+
+.side-menu {padding: 10px;}
+.side-menu > li {font-size: 1.5em; padding: 7px 0px 7px 0px;}
+
+/** All Menus **/
+#hamburger-menu-button {padding: 10px; border-radius: 5px;}
+.hamburger-menu-button--on {background-color: rgb(64, 53, 132);}
+.menu__link {color: rgb(255, 255, 255); border-radius: 5px; text-decoration: none;}
+.menu__link:hover {background-color: rgb(64, 53, 132); padding: 2px;}

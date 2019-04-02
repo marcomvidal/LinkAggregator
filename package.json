@@ -1,0 +1,34 @@
+{
+  "name": "postit",
+  "version": "1.5.0",
+  "description": "Repositório de links dinâmico e responsivo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcomvidal/PostIt.git"
+  },
+  "author": "Marco M. Vidal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcomvidal/LinkAggregator/issues"
+  },
+  "homepage": "https://github.com/marcomvidal/LinkAggregator#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-copy": "^4.0.1",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.2"
+  }
+}

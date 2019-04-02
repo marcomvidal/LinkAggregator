@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Agregador de Links</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+
+    <!-- Styling -->
+    <link rel="stylesheet" href="lib/css/general.css">
+    <link rel="stylesheet" href="lib/css/top.css">
+    <link rel="stylesheet" href="lib/css/menu.css">
+    <link rel="stylesheet" href="lib/css/content.css">
+    <link rel="stylesheet" href="lib/css/footer.css">
+</head>
+<body>
+    <!-- Top -->
+    <header class="top">
+        <div class="container">
+            <!-- Hamburger Menu -->
+            <div>
+                <h1 class="top__hamburger-menu-container">
+                    <span id="hamburger-menu-button" class="fas fa-bars"></span>
+                </h1>
+            </div>
+            <!-- /Hamburger Menu -->
+
+            <!-- Logo -->
+            <div class="top__logo-container">
+                <a  href="" target="_blank">
+                    <img class="top__logo" title="Link Aggregator" src="/lib/img/logo.png" />
+                </a>
+            </div>
+            <!-- /Logo -->
+
+            <!-- Main Menu -->
+            <div class="top__main-menu-container">
+                <nav class="main-menu__container">
+                    <ul class="main-menu"></ul>
+                </nav>
+            </div>
+            <!-- /Main Menu -->
+
+        </div>
+    </header>
+    <!-- /Top -->
+
+
+    <!-- Menu Lateral -->
+    <nav id="side-menu__container" class="side-menu__container side-menu__container--off">
+        <ul class="side-menu"></ul>
+    </nav>
+    <!-- /Menu Lateral -->
+
+
+    <!-- Content -->
+    <main class="content container"></main>
+    <!-- /Content -->
+
+
+    <!-- Footer -->
+    <footer class="footer container">
+        <section class="footer__container">
+            <p>Desenvolvido por Marco M. Vidal - Copyright © 2018-2019. Todos os direitos reservados.</p>
+        </section>
+    </footer>
+    <!-- /Footer -->
+
+
+<!-- JavaScript -->
+<script src="lib/js/data.js"></script>
+<script src="lib/js/utility.js"></script>
+<script src="lib/js/model/subject.js"></script>
+<script src="lib/js/model/link.js"></script>
+<script src="lib/js/model/card.js"></script>
+<script src="lib/js/controller.js"></script>
+
+</body>
+</html>
