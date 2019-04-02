@@ -1,6 +1,6 @@
 const gulp = require("gulp");
 // Libraries
-const gulpCopy = require("gulp-copy");
+const copy = require("gulp-copy");
 // CSS
 const cleanCSS = require("gulp-clean-css");
 const concatCSS = require("gulp-concat-css");
@@ -10,23 +10,26 @@ const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 const concat = require("gulp-concat");
 
-gulp.task("lib", async () => {
-    return gulp.src("lib/bootstrap/**")
-        .pipe(gulpCopy("dist/", { prefix: 1 }));
+gulp.task("img", async () => {
+    return gulp.src("src/img/**")
+        .pipe(copy("dist/img", { prefix: 2 }));
 });
 
 gulp.task("css", async () => {
-    return gulp.src("src/css/*.css")
-        .pipe(cleanCSS({level: {1: {specialComments: 0}}}))
+    return gulp.src([
+            "src/css/general.css",
+            "src/css/*.css"
+        ])
         .pipe(concatCSS("style.css"))
+        .pipe(cleanCSS({level: {1: {specialComments: 0}}}))
         .pipe(gulp.dest("dist"));
 });
 
 gulp.task("js", async () => {
     return gulp.src([
-            "src/js/jquery-3.3.1.js",
-            "src/js/bootstrap-3.3.7.js",
-            "src/js/*.js"
+            "src/js/model/*.js",
+            "src/js/*.js",
+            "!src/js/data.js"
         ])
         .pipe(strip())
         .pipe(babel())
@@ -35,8 +38,13 @@ gulp.task("js", async () => {
         .pipe(gulp.dest("dist"));
 });
 
+gulp.task("data-js", async () => {
+    return gulp.src("src/js/data.js")
+        .pipe(copy("dist", { prefix: 3 }));
+});
+
 gulp.task("default",
-    gulp.series("lib", "css", "js",
+    gulp.series("img", "css", "js", "data-js",
         async (done) => { done(); }
     )
 );

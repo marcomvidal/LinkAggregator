@@ -1,10 +1,9 @@
-# Post-It
-Quadro de Post-Its armazenados em RAM, permitindo operações de criação, exclusão e visualização.
+# Link Aggregator
+Quadro de links dispostos em cartão com possibilidades de personalização de informações e cores. <br />
+É possível alterar os links exibidos diretamente em `dist/data.js` ou em `src/data.js` com transpilação do `Gulp`.
 
 ## Ferramentas utilizadas
 - ECMAScript 6
-- jQuery 3.3.1
-- HTML5 e CSS3
-- Bootstrap 3.3.7
+- HTML5 e CSS3 com Flexbox
 - Gulp 4.0
 - Babel 7.4, transpilando para ES5
