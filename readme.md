@@ -1,6 +1,8 @@
 # Link Aggregator
 Quadro de links dispostos em cartão com possibilidades de personalização de informações e cores. <br />
-É possível alterar os links exibidos diretamente em `dist/data.js` ou em `src/data.js` com transpilação do `Gulp`.
+É possível alterar os links exibidos diretamente de duas formas:
+- Editando diretamente `dist/data.js`, ou
+- Editando `src/data.js` e depois transpilando com `Gulp`.
 
 ## Ferramentas utilizadas
 - ECMAScript 6
