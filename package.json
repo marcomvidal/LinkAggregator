@@ -1,5 +1,5 @@
 {
-  "name": "postit",
+  "name": "linkaggregator",
   "version": "1.5.0",
   "description": "Repositório de links dinâmico e responsivo.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/marcomvidal/PostIt.git"
+    "url": "git+https://github.com/marcomvidal/LinkAggregator.git"
   },
   "author": "Marco M. Vidal",
   "license": "ISC",
