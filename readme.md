@@ -1,5 +1,5 @@
 # Link Aggregator
-Quadro de links dispostos em cartão com possibilidades de personalização de informações e cores. <br />
+Quadro de links dispostos em cartão com possibilidades de personalização de informações e cores.
 
 ## Ferramentas utilizadas
 - Totalmente front-end
